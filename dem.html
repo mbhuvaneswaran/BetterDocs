@@ -10,7 +10,7 @@
           href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.0.5/css/tooltipster.css"/>
     <link type="text/css" rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.0.5/css/themes/tooltipster-light.css"/>
-    <link type="text/css" rel="stylesheet" href="stylesheets/less.css"/>
+    <link type="text/css" rel="stylesheet" href="stylesheets/demo_changed.css"/>
 </head>
 <body>
 <div class="remodal-bg">
@@ -24,7 +24,7 @@
                        placeholder="FileChannel,MappedByteBuffer">
             </form>
         </div>
-        <span class="settingsIcon"><a href="#modal"><i class="fa fa-cog"></i></a></span>
+        <span class="settingsIcon"><a href="#modal" id="modal"><i class="fa fa-cog"></i></a></span>
     </div>
     <div class="container">
         <div class="searchResults">
@@ -125,12 +125,12 @@
     </div>
     <div class="modalContent">
         <form>
-            <input type="text" id="elasticSearchURL" class="input"
+            <input type="text" id="elasticSearchURL" class="input" tabindex="1"
                    placeholder="BetterDocs URL" value="http://labs.imaginea.com/betterdocs"><br/>
-            <input type="number" id="resultSize" value="50" class="input" placeholder="Result size">
+            <input type="number" id="resultSize" value="50" class="input" tabindex="2" placeholder="Result size">
             <br/>
 
-            <select class="input" id="theme" style="width: 53%">
+            <select class="input" id="theme" tabindex="3" style="width: 53%">
                 <option name="Light" value="github" selected>Light Theme</option>
                 <option name="Dark" value="twilight">Dark Theme</option>
             </select>
@@ -164,8 +164,8 @@
     (function (i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
         i[r] = i[r] || function () {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
         a = s.createElement(o),
                 m = s.getElementsByTagName(o)[0];
         a.async = 1;

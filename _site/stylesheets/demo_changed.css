@@ -2,8 +2,8 @@
 font family
 */
 body {
-  background: #93b1c6;
-  color: #3f3f3f;
+  background: white;
+  color: black;
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   font-size: 14px;
@@ -13,8 +13,8 @@ div {
 }
 header {
   font-weight: 600;
-  background: #c7d0d5;
-  color: #ec583a;
+  background: #009587;
+  color: white;
   border-bottom: 1px solid #f5f5f5;
   height: 50px;
 }
@@ -40,11 +40,11 @@ div.topPanel {
   overflow: hidden;
   padding: 10px;
   border-bottom: 1px dotted #f5f5f5;
-  background: #c7d0d5;
+  background: #009587;
 }
 div.topPanel span.logo {
   font-weight: 600;
-  color: #ec583a;
+  color: white;
   float: left;
   font-size: 24px;
 }
@@ -68,22 +68,18 @@ span.settingsIcon {
   font-size: 18px;
 }
 span.settingsIcon a {
-  color: #ec583a;
+  color: white;
 }
 input#searchString {
   width: 100%;
   border: 0;
   box-shadow: none;
-  border-radius: 4px;
-  color: #3f3f3f;
+  color: black;
   padding: 10px 10px 10px 33px;
   font-size: 14px;
   outline: none;
 }
 footer {
-  background: #c7d0d5;
-  color: #ec583a;
-  border-top: 1px solid #f5f5f5;
   height: 50px;
 }
 .remodal *,
@@ -102,6 +98,15 @@ footer {
 .remodal textarea:focus,
 .remodal input:focus {
   font-size: 14px;
+}
+.remodal .heading {
+  background: #009587;
+  height: 35px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.modalContent input {
+  width: 53%;
 }
 /* over-riding button styles*/
 .remodal-confirm,
@@ -125,9 +130,8 @@ footer {
 .remodal-confirm,
 .remodal-confirm:hover,
 .remodal-confirm:active {
-  color: #fdfcfa;
-  background: #ec583a;
-  border: 2px solid #ff7148;
+  color: white;
+  background: #009587;
 }
 div.remodal {
   padding: 0;
@@ -139,7 +143,7 @@ div.remodal form .input {
   border: 0;
   box-shadow: none;
   border-radius: 0;
-  color: #3f3f3f;
+  color: black;
   margin-bottom: 20px;
 }
 div.modalFooter {
@@ -158,7 +162,6 @@ div.rightContainer {
   width: 70%;
   height: 100%;
   border: 1px solid #f5f5f5;
-  border-radius: 4px;
 }
 div.resultContainer {
   padding: 0 10px;
@@ -169,7 +172,6 @@ div.resultContainer {
   color: #555555;
   padding: 10px;
   margin-bottom: 10px;
-  border-radius: 4px;
 }
 .alert-box span {
   font-weight: 600;
@@ -187,10 +189,10 @@ div.resultContainer {
   background-image: none;
   border: 0px;
   border-radius: 0px;
-  color: #3f3f3f;
+  color: black;
 }
 span.viewOptions a {
-  color: #ec583a;
+  color: white;
   text-decoration: none;
 }
 span.viewOptions .fa {
@@ -220,16 +222,13 @@ div.leftPanelPadding {
   line-height: 38px;
   font-weight: 600;
   float: left;
-  background: #c7d0d5;
-  color: #ec583a;
-  border-bottom: 1px solid #f5f5f5;
-  border-radius: 4px 4px 0 0;
+  background: #494e5b;
+  color: white;
 }
 .tabs div.active {
-  background: #ec583a;
+  background: #373b44;
   cursor: default;
-  color: #c7d0d5;
-  border: 1px solid #f5f5f5;
+  color: white;
   border-bottom: none;
 }
 li.clickable {
@@ -246,25 +245,23 @@ div.leftPanelContent {
   overflow-y: auto;
   border: 1px solid #f5f5f5;
   border-top: none;
-  border-radius: 0 0 4px 4px;
 }
 span.documentation {
   font-size: 10px;
 }
 div.fileHeader {
-  background: #eaeaea;
+  background: white;
   padding: 5px;
 }
 div.fileHeader a {
-  color: #ec583a;
+  color: #428bca;
   font-size: 11px;
   font-weight: 600;
   text-decoration: none;
 }
 div.resultHeader {
-  background-color: #c7d0d5;
-  height: 28px;
-  border-radius: 4px 4px 0 0;
+  background-color: #494e5b;
+  height: 38px;
   margin-bottom: 10px;
 }
 span.codeIcon {
@@ -273,7 +270,6 @@ span.codeIcon {
 div.repoInfo {
   border: 1px solid #f5f5f5;
   height: 100%;
-  border-radius: 4px;
 }
 ul,
 li {
@@ -284,7 +280,7 @@ ul ul {
   margin-bottom: 20px;
 }
 ul ul li {
-  color: #3f3f3f;
+  color: black;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
@@ -296,13 +292,12 @@ ul ul li:hover {
   color: #000000;
 }
 ul li a {
-  color: #ec583a;
+  color: white;
   font-size: 11px;
   font-weight: 600;
   text-decoration: none !important;
   background: #ffffff;
   padding: 2px 5px;
-  border-radius: 4px;
   margin-left: 10px;
   display: inline-block;
 }

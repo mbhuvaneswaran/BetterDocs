@@ -1,0 +1,336 @@
+/*
+font family
+*/
+body {
+    /* background: #93b1c6; */
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    font-size: 14px;
+}
+div {
+    box-sizing: border-box;
+}
+header {
+    font-weight: 600;
+    background: #c7d0d5;
+    color: #ec583a;
+    border-bottom: 1px solid #f5f5f5;
+    height: 50px;
+}
+header h2 {
+    line-height: 60px;
+}
+.remodal-bg {
+    height: 100vh;
+}
+.container {
+    padding: 10px;
+    height: calc(100vh - 57px) !important;
+}
+.editor {
+    height: 90%;
+}
+.result {
+    height: 50%;
+    width: 100%;
+    display: inline-block;
+}
+div.topPanel {
+    overflow: hidden;
+    padding: 10px;
+    border-bottom: 1px dotted #f5f5f5;
+    background: #009587;
+}
+div.topPanel span.logo {
+    font-weight: 600;
+    color: fff;
+    float: left;
+    font-size: 24px;
+}
+div.searchForm {
+    width: 70%;
+    float: left;
+}
+div.searchForm > form {
+    margin: 0 0 0 10px;
+    position: relative;
+}
+span.searchIcon {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+span.settingsIcon {
+    float: right;
+    margin-right: 15px;
+    margin-top: 10px;
+    font-size: 18px;
+}
+span.settingsIcon a {
+    color: #fff;
+}
+input#searchString {
+    width: 100%;
+    border: 0;
+    box-shadow: none;
+    /* border-radius: 4px; */
+    color: #3f3f3f;
+    padding: 10px 10px 10px 33px;
+    font-size: 14px;
+    outline: none;
+}
+footer {
+    background: #c7d0d5;
+    color: #ec583a;
+    border-top: 1px solid #f5f5f5;
+    height: 50px;
+}
+.remodal *,
+.remodal * {
+    font-family: 'Open Sans', sans-serif;
+}
+/*The close icon doesn't show up so not displaying it for now*/
+.remodal-close {
+    display: none;
+}
+/* over-riding default size*/
+.remodal select,
+.remodal textarea,
+.remodal input,
+.remodal select:focus,
+.remodal textarea:focus,
+.remodal input:focus {
+    font-size: 14px;
+}
+/* over-riding button styles*/
+.remodal-confirm,
+.remodal-cancel {
+    font-size: 10pt;
+    display: inline-block;
+    width: 120px;
+    margin: 0 0 5px 0;
+    padding: 5px 0;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    text-align: center;
+    text-decoration: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-clip: padding-box;
+}
+.remodal-confirm,
+.remodal-confirm:hover,
+.remodal-confirm:active {
+    color: #fdfcfa;
+    background: #ec583a;
+    border: 2px solid #ff7148;
+}
+div.remodal {
+    padding: 0;
+    border-radius: 0;
+    width: 400px;
+}
+div.remodal form .input {
+    padding: 6px;
+    border: 0;
+    box-shadow: none;
+    border-radius: 0;
+    color: #3f3f3f;
+    margin-bottom: 20px;
+}
+div.modalFooter {
+    padding-top: 5px;
+}
+div.searchResults {
+    overflow: hidden;
+}
+div.repoInfo select {
+    width: 100%;
+    padding: 5px;
+    height: calc(100vh - 130px);
+}
+div.rightContainer {
+    float: right;
+    width: 70%;
+    height: 100%;
+    border: 1px solid #f5f5f5;
+    /* border-radius: 4px; */
+}
+div.resultContainer {
+    padding: 0 10px;
+    height: calc(100vh - 127px);
+    overflow-y: auto;
+    margin-right: 10px;
+}
+.alert-box {
+    color: #555555;
+    padding: 10px;
+    margin-bottom: 10px;
+    /* border-radius: 4px; */
+}
+.alert-box span {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.alert-box.error {
+    background: #ffecec;
+    border: 1px solid #f5aca6;
+}
+.alert-box.error .fa-times-circle {
+    color: red;
+}
+.ace_layer.ace_text-layer .ace_line .ace_fold,
+.ace_line .ace_fold:hover {
+    background-image: none;
+    border: 0px;
+    border-radius: 0px;
+    color: #3f3f3f;
+}
+span.viewOptions a {
+    color: white;
+    text-decoration: none;
+}
+span.viewOptions .fa {
+    margin: 7px 10px;
+}
+h3 {
+    margin: 0 0 10px 0;
+}
+div.rightContainer.fullWidth {
+    width: 100%;
+}
+#connectionError {
+    display: none;
+}
+div.leftPanelPadding {
+    padding: 10px;
+}
+.tabs {
+    overflow: hidden;
+}
+.tabs div {
+    width: 50%;
+    display: inline-block;
+    height: 38px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 38px;
+    font-weight: 600;
+    float: left;
+    background: #494E5B;
+    color: white;
+    border-bottom: 1px solid #f5f5f5;
+    /* border-radius: 4px 4px 0 0; */
+}
+.tabs div.active {
+    background: #373B44;
+    cursor: default;
+    color: white;
+    /* border: 1px solid #f5f5f5; */
+    /* border-bottom: 2px solid #428bca; */
+}
+li.clickable {
+    cursor: pointer;
+}
+div#leftPanel {
+    height: 100%;
+    float: left;
+    width: 30%;
+    padding-right: 10px;
+}
+div.leftPanelContent {
+    height: calc(100vh - 115px) !important;
+    overflow-y: auto;
+    border: 1px solid #f5f5f5;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+}
+span.documentation {
+    font-size: 10px;
+}
+div.fileHeader {
+    background: white;
+    padding: 5px;
+}
+div.fileHeader a {
+    color: #428bca;
+    font-size: 11px;
+    font-weight: 600;
+    text-decoration: none;
+}
+div.resultHeader {
+    background-color: #494E5B;
+    height: 28px;
+    /* border-radius: 4px 4px 0 0; */
+    margin-bottom: 10px;
+    color: white;
+}
+span.codeIcon {
+    margin: 2px;
+}
+div.repoInfo {
+    border: 1px solid #428bca;
+    height: 100%;
+    /* border-radius: 4px; */
+}
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+ul ul {
+    margin-bottom: 20px;
+}
+ul ul li {
+    color: #3f3f3f;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    padding: 2px 0;
+}
+ul ul li:hover {
+    color: #000000;
+}
+ul li a {
+    color: #ec583a;
+    font-size: 11px;
+    font-weight: 600;
+    text-decoration: none !important;
+    background: #ffffff;
+    padding: 2px 5px;
+    border-radius: 4px;
+    margin-left: 10px;
+    display: inline-block;
+}
+#resultTree > ul > li,
+#commonMethods > ul > li {
+    font-weight: bold;
+    text-decoration: underline;
+}
+/* list styling ends */
+#resultTreeContainer > h3,
+#methodsContainer > h3 {
+    display: none;
+}
+body::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar
+{
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+    background-color: #000000;
+    border: 2px solid #555555;
+}
